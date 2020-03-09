@@ -13,9 +13,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class Comp2Component {
-  private message1;
-  private message2;
-  private message3;
+  public message1;
+  public message2;
+  public message3;
 
   setMessage1() {
     this.message1 = "Text for Message1 onClick!";
