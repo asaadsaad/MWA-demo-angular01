@@ -18,7 +18,7 @@ import {
   styles: []
 })
 export class Comp5Component {
-  private paragraphsData = '';
+  public paragraphsData = '';
 
   @ViewChild('myTemplateParagraph', { static: true }) myTemplateParagraphObj;
   @ContentChild('myParentParagraph', { static: true }) myParentParagraphObj;
