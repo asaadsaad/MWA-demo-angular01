@@ -20,15 +20,10 @@ import {
 export class Comp5Component {
   public paragraphsData = '';
 
-  @ViewChild('myTemplateParagraph', { static: true }) myTemplateParagraphObj;
-  @ContentChild('myParentParagraph', { static: true }) myParentParagraphObj;
+  @ViewChild('myTemplateParagraph') myTemplateParagraphObj;
+  @ContentChild('myParentParagraph') myParentParagraphObj;
 
   getParagraphsData() {
     this.paragraphsData = this.myTemplateParagraphObj.nativeElement.textContent + ' - ' + this.myParentParagraphObj.nativeElement.textContent;
   }
-  //  ngAfterViewChecked() {
-  //     console.log(this.myTemplateParagraphObj);
-  //     console.log(this.myParentParagraphObj);
-  // }
-
 }
