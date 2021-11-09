@@ -13,21 +13,21 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class Comp2Component {
-  public message1;
-  public message2;
-  public message3;
+  public message1: string = '';
+  public message2: string = '';
+  public message3: string = '';
 
   setMessage1() {
     this.message1 = "Text for Message1 onClick!";
   }
 
-  setMessage2(text) {
+  setMessage2(text: any) {
     this.message2 = text;
   }
 
-  setMessage3(evt) {
-    console.log(evt);
-    this.message3 = evt.srcElement.tagName;
+  setMessage3(event: any) {
+    console.log(event);
+    this.message3 = event.srcElement.tagName;
   }
 
   getTrue() {

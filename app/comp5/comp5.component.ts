@@ -20,8 +20,8 @@ import {
 export class Comp5Component {
   public paragraphsData = '';
 
-  @ViewChild('myTemplateParagraph') myTemplateParagraphObj;
-  @ContentChild('myParentParagraph') myParentParagraphObj;
+  @ViewChild('myTemplateParagraph') myTemplateParagraphObj: any;
+  @ContentChild('myParentParagraph') myParentParagraphObj: any;
 
   getParagraphsData() {
     this.paragraphsData = this.myTemplateParagraphObj.nativeElement.textContent + ' - ' + this.myParentParagraphObj.nativeElement.textContent;

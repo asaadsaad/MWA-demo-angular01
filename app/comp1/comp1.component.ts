@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-comp1',
@@ -12,13 +12,13 @@ import { Component, Input} from '@angular/core';
       <p><ng-content></ng-content></p>
   `
 })
-export class Comp1Component  {
+export class Comp1Component {
   public message1;
-  @Input() message2;
-  @Input() message3;
+  @Input() message2: string = '';
+  @Input() message3: string = '';
 
-  constructor() { 
-     this.message1 = 'default message from testing'
+  constructor() {
+    this.message1 = 'default message from testing'
   }
 
 }

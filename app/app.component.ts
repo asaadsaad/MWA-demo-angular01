@@ -28,12 +28,12 @@ import { Component } from '@angular/core';
   `
 })
 export class AppComponent {
-  public message2 = "Message 2 from Parent Component";
-  public message3 = "Message 3 from Parent Component";
+  public message2: string = "Message 2 from Parent Component";
+  public message3: string = "Message 3 from Parent Component";
 
-  public outputData;
+  public outputData: any;
 
-  showOutputData(data) {
+  showOutputData(data: string) {
     this.outputData = data;
   }
 }
