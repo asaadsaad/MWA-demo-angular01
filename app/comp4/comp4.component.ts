@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   <h1>Component 4:</h1>
     <p>Two-way Data Binding:</p>
     <p>Message: {{message}}</p>
-    <input [value]="message" (input)="twoWays($event)">
+    <input [value]="message" (input)="twoWays($event)" />
+    <input [value]="message" (input)="message=$any($event.target).name" />
   `
 })
 export class Comp4Component {
